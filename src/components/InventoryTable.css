@@ -1,0 +1,142 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  line-height: 1.6;
+}
+
+.container {
+  width: 95%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.controls,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.low-stock {
+  background-color: #ffebee !important;
+}
+
+.low-stock td {
+  color: #fa0c0c;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.btn-ec {
+  background-color: rgb(76, 76, 238);
+}
+.btn-ec:hover {
+  background-color: rgb(76, 76, 238);
+}
+.btn-de {
+  background-color: rgb(238, 76, 76);
+}
+.btn-de:hover {
+  background-color: rgb(238, 76, 76);
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+}
+
+@media screen and (max-width: 600px) {
+  .controls,
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
