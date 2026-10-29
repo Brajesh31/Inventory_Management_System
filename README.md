@@ -34,4 +34,4 @@ A simple dynamic inventory management system implementation to track and manage 
 
 ![Inventry Management System](./src/assets/image.png)
 
-Last updated: 2026-10-28 20:56 UTC
+Last updated: 2026-10-29 00:46 UTC
